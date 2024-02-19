@@ -1,0 +1,163 @@
+       /* adminify plugin styles */
+       .wp-adminify #wpbody-content #jltwp_adminify_dash_activity_logs .inside, .wp-adminify #wpbody-content #jltwp_adminify_dash_user_activities .inside {
+           padding: 16px;
+       }
+       .wp-adminify #wpbody-content #jltwp_adminify_dash_activity_logs table td, .wp-adminify #wpbody-content #jltwp_adminify_dash_activity_logs table th, .wp-adminify #wpbody-content #jltwp_adminify_dash_activity_logs table tr, .wp-adminify #wpbody-content #jltwp_adminify_dash_user_activities table td, .wp-adminify #wpbody-content #jltwp_adminify_dash_user_activities table th, .wp-adminify #wpbody-content #jltwp_adminify_dash_user_activities table tr {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .wp-adminify #wpbody-content .metabox-holder .postbox#dashboard_quick_press form {
+        margin-left: 0;
+        margin-right:0;
+    }
+    .wp-adminify #wpbody-content #dashboard_primary .inside {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    /* adminify plugin styles end */
+    #wpbody-content .metabox-holder {
+       padding-top: 0;
+   }
+
+   #goldbach_campaign_widget.postbox {
+    background-color: #7f7f7f !important;
+    border-radius: 10px !important;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 0 54px 0 rgba(20,20,42,.07);
+    box-shadow: 0 0 54px 0 rgba(20,20,42,.07);
+    overflow: hidden;
+}
+
+#goldbach_campaign_widget .postbox-header {
+    color: #fff;
+    text-transform: uppercase;
+    background: #b61f35;
+    /*margin: 10px 10px 0px*/
+}
+
+#goldbach_campaign_widget .postbox-header h2 {
+    color: #fff;
+}
+
+#goldbach_campaign_widget .inside {
+    border-top: 3px solid #000;
+    /*border-radius: 15px;*/
+    background: #ededed;
+        /*margin: 5px 10px 15px;*
+    ;*/
+    padding-left: 0;
+    padding-right: 0
+}
+
+.wp-adminify #wpbody-content .metabox-holder #goldbach_campaign_widget.postbox .inside {
+    padding: 0
+}
+
+#goldbach_campaign_widget .inside table{width: 100%}
+#goldbach_campaign_widget .inside table tr {
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+#goldbach_campaign_widget .inside table th {
+    
+}
+
+#goldbach_campaign_widget .inside table tr:first-child th {
+    color: #fff;
+    background-color: #000;
+    min-width: calc(100% / 9);
+    min-width: calc(100% / 7);
+}
+
+#goldbach_campaign_widget .inside table tr td {
+    border-bottom: 2px solid #7f7f7f;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    height: 45px;
+}
+#goldbach_campaign_widget .inside table tr td.media {
+    flex-direction: column;
+    display: table-cell;
+}
+#goldbach_campaign_widget .inside table tr td.medien{text-align:center}
+#goldbach_campaign_widget .inside table tr td img{max-width: 50px;
+    max-height: 30px;
+    height: 30px;
+    width: auto;
+    object-fit: cover;}
+
+    #goldbach_campaign_widget .inside table tr td video{width:50px;height:30px;}
+
+    #goldbach_campaign_widget .inside table tr td a {
+        color: #d63638;
+    }
+
+    #goldbach_campaign_widget .inside table tr td a:hover {
+        color: #7f7f7f;
+    }
+
+    #goldbach_campaign_widget .inside table tr:last-child td {
+        border-bottom: none
+    }
+
+    #goldbach_campaign_widget table {
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    .wp-adminify #wpbody-content #goldbach_campaign_widget button span {
+        color: #fff;
+    }
+/* Pagination */
+#foreach-pagination{padding:0 3px;}
+#foreach-pagination li {
+    display: inline-block;
+    margin-right: 3px;
+    color: #d63638;
+    cursor: pointer;
+}
+
+#foreach-pagination li.active {
+    color: #6a0e0f;
+}
+
+#foreach-pagination li:hover {
+    text-decoration: underline;
+}
+
+#foreach-pagination > li:last-child{margin-right: 0}
+
+    @media only screen and (min-width: 1500px) and (max-width: 1800px){
+        #wpbody-content #dashboard-widgets #postbox-container-1 {
+            width: 100%;
+        }
+    }
+
+/* Campaign Admin Style */
+.wp-admin.post-type-playlist.taxonomy-kampagnen #wp-admin-bar-view {display: none}
+.wp-admin.post-type-playlist.taxonomy-kampagnen #wp-admin-bar-view .ab-item {display: none}
+
+.table-campaigns-wrapper th {
+    cursor: pointer;
+}
+
+.table-campaigns-wrapper th.active::before {
+    content: "";
+    color: #fff;
+    display: inline-block;
+    font: normal 20px/1 dashicons;
+    position: relative;
+    top: 0.11rem;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+}
+
+.table-campaigns-wrapper th.active[data-order="ASC"]::before {
+    content: "\f343";
+}
+
+.table-campaigns-wrapper th.active[data-order="DESC"]::before {
+    content: "\f347";
+}
